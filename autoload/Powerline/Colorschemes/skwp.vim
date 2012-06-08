@@ -61,30 +61,34 @@ call Pl#Hi#Allocate({
 let g:Powerline#Colorschemes#skwp#colorscheme = Pl#Colorscheme#Init([
 	\ Pl#Hi#Segments(['SPLIT'], {
 		\ 'n': ['white', 'base02'],
-		\ 'N': ['white', 'base02'],
+		\ 'N': ['white', 'gray1'],
+		\ 'i': ['white', 'darkestblue'],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['mode_indicator'], {
-		\ 'n': ['darkestgreen', 'brightgreen', ['bold']],
+		\ 'n': ['base03', 'green', ['bold']],
 		\ 'i': ['darkestcyan', 'white', ['bold']],
-		\ 'v': ['red', 'brightorange', ['bold']],
+		\ 'v': ['white', 'orange', ['bold']],
 		\ 'r': ['white', 'violet', ['bold']],
 		\ 's': ['white', 'gray5', ['bold']],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['branch', 'raw', 'filesize'], {
-		\ 'n': ['base03', 'blue'],
-		\ 'N': ['gray5', 'base03'],
+		\ 'n': ['base03', 'base00'],
+		\ 'N': ['gray5', 'gray1'],
+		\ 'i': ['mediumcyan', 'darkblue'],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['scrollpercent'], {
-		\ 'n': ['gray7', 'gray2'],
+		\ 'n': ['base2', 'base03'],
 		\ 'N': ['base2', 'base02'],
+		\ 'i': ['mediumcyan', 'darkblue'],
 		\ }),
 	\
-	\ Pl#Hi#Segments(['fileinfo', 'filename', 'filepath'], {
-		\ 'n': ['base2', 'darkestblue', ['bold']],
-		\ 'N': ['base1', 'base02', ['bold']],
+	\ Pl#Hi#Segments(['fileinfo', 'filename'], {
+		\ 'n': ['base2', 'base02', ['bold']],
+		\ 'N': ['gray7', 'base03', ['bold']],
+		\ 'i': ['white', 'darkblue', ['bold']],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['fileinfo.filepath'], {
@@ -106,12 +110,12 @@ let g:Powerline#Colorschemes#skwp#colorscheme = Pl#Colorscheme#Init([
 		\ }),
 	\
 	\ Pl#Hi#Segments(['currenttag', 'fileformat', 'fileencoding', 'pwd', 'filetype', 'rvm:string', 'rvm:statusline', 'virtualenv:statusline', 'charcode', 'currhigroup'], {
-		\ 'n': ['gray5', 'gray2'],
+		\ 'n': ['base03', 'base01'],
 		\ 'i': ['mediumcyan', 'base02'],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['lineinfo'], {
-		\ 'n': ['gray2', 'gray10', ['bold']],
+		\ 'n': ['base0', 'base02', ['bold']],
 		\ 'N': ['gray7', 'gray1', ['bold']],
 		\ 'i': ['darkestcyan', 'mediumcyan', ['bold']],
 		\ }),

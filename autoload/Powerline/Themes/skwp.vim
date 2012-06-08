@@ -7,15 +7,23 @@
 "\ , 'lineinfo'
 let g:Powerline#Themes#skwp#theme = Pl#Theme#Create(
 	\ Pl#Theme#Buffer(''
+		\ , 'paste_indicator'
+		\ , 'mode_indicator'
 		\ , 'fugitive:branch'
+		\ , 'hgrev:branch'
 		\ , 'fileinfo'
-		\ , 'flags.mod'
+		\ , 'aurum:status'
 		\ , 'syntastic:errors'
 		\ , Pl#Segment#Truncate()
+		\ , 'tagbar:currenttag'
 		\ , Pl#Segment#Split()
-		\ , 'sass:status'
 		\ , 'rvm:string'
-		\ , 'paste_indicator'
+		\ , 'virtualenv:statusline'
+		\ , 'fileformat'
+		\ , 'fileencoding'
+		\ , 'filetype'
+		\ , 'scrollpercent'
+		\ , 'lineinfo'
 	\ ),
 	\
 	\ Pl#Theme#Buffer('command_t'
